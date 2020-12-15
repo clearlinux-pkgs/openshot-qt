@@ -4,7 +4,7 @@
 #
 Name     : openshot-qt
 Version  : 2.5.1
-Release  : 5
+Release  : 6
 URL      : https://github.com/OpenShot/openshot-qt/archive/v2.5.1.tar.gz
 Source0  : https://github.com/OpenShot/openshot-qt/archive/v2.5.1.tar.gz
 Summary  : No detailed summary available
@@ -22,12 +22,12 @@ BuildRequires : qscintilla
 BuildRequires : sip
 
 %description
-To compile a Qt resource file with new icons, follow these steps:
-1) Edit the resource file, and add files to it (the *.qrc files) using QtCreator
+To compile a Qt resource file with new translations, follow these steps:
+1) Edit the resource file and add the translations to it, using QtCreator
 2) Compile this into a Python file, either:
 $ make
 or, if make is unavailable:
-$ pyrcc5 openshot.qrc -o openshot_rc.py
+$ pyrcc5 openshot_lang.qrc -o openshot_lang.py
 
 %package bin
 Summary: bin components for the openshot-qt package.
@@ -82,15 +82,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583293425
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1608056506
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
