@@ -4,7 +4,7 @@
 #
 Name     : openshot-qt
 Version  : 2.5.1
-Release  : 9
+Release  : 10
 URL      : https://github.com/OpenShot/openshot-qt/archive/v2.5.1.tar.gz
 Source0  : https://github.com/OpenShot/openshot-qt/archive/v2.5.1.tar.gz
 Summary  : No detailed summary available
