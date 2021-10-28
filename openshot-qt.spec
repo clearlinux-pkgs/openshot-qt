@@ -4,7 +4,7 @@
 #
 Name     : openshot-qt
 Version  : 2.6.1
-Release  : 12
+Release  : 13
 URL      : https://github.com/OpenShot/openshot-qt/archive/v2.6.1/openshot-qt-2.6.1.tar.gz
 Source0  : https://github.com/OpenShot/openshot-qt/archive/v2.6.1/openshot-qt-2.6.1.tar.gz
 Summary  : No detailed summary available
